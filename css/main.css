@@ -1,0 +1,298 @@
+.header{
+   background-image: url(../img/playita.jpg);
+   background-position: center;
+   background-size: cover;
+   position: relative;
+}
+
+.img-logo{
+   width: 40px;
+}
+
+.text-color{
+   color: #000;
+   font-weight: 400;
+   font-size: 20px;
+}
+
+.mein{
+   color: #BCE210;
+   font-size: 25px;
+   padding-left: 10px;
+   font-family: 'Didact Gothic', sans-serif;
+}
+
+
+.mein:hover{
+   color: #E8F5AF;
+}
+
+.txt-color{
+   color: #FFF;
+   background-color: hsla(210, 27%, 20%, 0.575);
+   font-size: 20px;
+   font-family: 'Didact Gothic', sans-serif;
+   border-radius: 10px;
+}
+
+a{
+   text-decoration: none;
+}
+
+h1,h3{
+   color: #2D3757;
+   font-family: 'Piedra', cursive;
+   font-weight: 100;
+}
+
+.media-body{
+   background-color: #CDCDCF;
+   border-radius: 5px;
+   box-shadow: 7px 7px 7px rgba(0 0 0 /0.5);;
+}
+
+.navbar{
+   background-color: #243240;
+   color: #fff;
+}
+
+.btn{
+   background-color: #243240;
+   color: #fff;
+   font-family: 'Didact Gothic', sans-serif;
+}
+
+h4{
+   font-family: 'Didact Gothic', sans-serif;
+}
+
+h2,h5{
+   font-family: 'Patrick Hand', cursive;
+}
+
+span{
+   font-family: 'Rancho', cursive;
+   font-size: 70px;
+   color: #fff;
+}
+
+.init{
+   color: #C4E002;
+   font-size: 35px;
+}
+
+.head-color{
+   color: #184558;
+}
+
+p{
+   font-family: 'Didact Gothic', sans-serif;
+   font-size: 16px;
+}
+
+.linear-white::after{
+   content: "";
+   display: block;
+   width: 100%;
+   height: 10px;
+   background-color: #fff;
+   position: absolute;
+   left: 0;
+   bottom: 0;
+}
+
+.vh-50{
+   height: 50vmin;
+}
+
+.mg-top{
+   margin-top: 20px;
+}
+
+.mj-top{
+   margin-top: 90px;
+}
+
+.carousel{
+   width: 90%;
+   height: 50vh;
+   transform: translate(7% , 0%);
+}
+
+.card-img-filter{
+   filter: brightness(0.5);
+}
+
+.card{
+   margin-bottom: 15px;
+
+}
+
+.comments{
+   background-image: url(../img/playa2/Beach_sand_summer_sky-Hot_summer_Photo_Wallpaper_1366x768.jpg);
+   background-position: center;
+   background-size: cover;
+   position: relative;
+}
+
+.comments.linear-white::after{
+   top: 0;
+}
+
+.Commets__img{
+   --tamano:80px;
+   width: var(--tamano);
+   height: var(--tamano);
+   object-fit: cover;
+   border-radius: 50%;
+   box-shadow: 7px 7px 7px rgba(0 0 0 /0.5);
+   border: 3px ridge #fff;
+}
+
+ion-icon{
+   color: gold;
+   font-size: 26px;
+
+ }
+
+.ref{
+   color: salmon;
+}
+
+.ref:hover{
+   color: #057F8D;
+}
+
+body::-webkit-scrollbar{
+   width: 12px;
+}
+
+body::-webkit-scrollbar-thumb{
+   background-color: #575757;
+   border-radius: 5px;
+}
+
+.trasnform-turn{
+   transform: rotate(.5turn);
+}
+
+
+ .topmargin-lg {
+   margin-top: 60px;
+ }
+
+.media-object-img{
+   --medida: 65px;
+   width: var(--medida);
+   height: var(--medida);
+   margin-right: 15px;
+}
+
+.row {
+   display: flex;
+   padding: 0px;
+ }
+ 
+ /* Create four equal columns that sits next to each other */
+ .column {
+   flex: 25%;
+   max-width: 33.3%;
+   padding: 0 4px;
+ }
+ 
+ .column img {
+   margin-top: 8px;
+   vertical-align: middle;
+   width: 100%;
+   filter: grayscale(1) brightness(0.5);
+   border-radius: 5px;
+   cursor: pointer;
+   transition: 0.3s linear;
+ }
+ .column img:hover {
+   filter: grayscale(0);
+ }
+ @media screen and (max-width: 800px) {
+   .column {
+     flex: 50%;
+     max-width: 50%;
+   }
+ }
+ 
+ /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+ @media screen and (max-width: 600px) {
+   .column {
+     flex: 100%;
+     max-width: 100%;
+   }
+   .column img {
+     filter: grayscale(0) brightness(1);
+   }
+ }
+ 
+
+
+
+
+ .Model {
+   font-size: 15px;
+   border: 1px solid #cacaca;
+   padding: 15px;
+   border-radius: 1px;
+   height: auto;
+ }
+ 
+ .form-control:focus{
+   border: 1px solid black;
+   outline: none;
+   box-shadow: none;
+ } 
+  
+.top-bt{
+   margin-bottom: 130px;
+}
+
+.top-st{
+   margin-top: 150px;
+}
+
+.pad-ft{
+   margin-top: 70px;
+}
+
+.logo-brand{
+   width: 40px;
+   height: 40px;
+}
+
+
+/* 
+ .btn {
+   font-size: 14px;
+   padding: 15px 26px;
+   min-width: 168px;
+   border-radius: 5px;
+   display: inline-block;
+ }
+  */
+ footer {
+   padding: 95px 0;
+   text-align: center;
+   color:#BCE210;
+   background: #354C51;
+ }
+ 
+ footer a , small{
+   color: white;
+ }
+ 
+ footer a:hover {
+   color: var(--white-color);
+ }
+ 
+ footer .list-inline .list-inline-item {
+   padding: 10px 15px;
+ }
+
+ 
+ 

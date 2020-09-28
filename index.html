@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weston | Traveler</title>
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- CDN Font awesome -->
+    <!-- Google Fonts Types -->
+    <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bs4.pop.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="js/bs4.pop.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <!-- <script type="text/javascript">
+      alert("Weston Traveler la de la Bienvenida, será un gusto servirle.")
+    </script> -->
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]', {
+      // Function. Custom easing pattern
+      // If this is set to anything other than null, will override the easing option above
+      customEasing: function (time) {
+
+      // return <your formulate with time as a multiplier>
+
+      // Example: easeInOut Quad
+      return time < 0.5 ? 2 * time * time : -1 + (4 - 2 * time) * time;
+        }
+      });
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+    <!-- CSS Main -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <!-- Body Starts -->
+  <body style="overflow-x:hidden ;">
+
+    <!-- Toast de Notificación -->
+    <div class="toast">
+
+    </div>
+
+    <!-- Nav Bar -->
+    <nav>
+      <nav class="navbar navbar-expand-xl navbar-light fixed-top">
+
+        <a style="text-decoration: none;" href="#" class="col-auto colored">
+          <img src="./img/logo-white.svg" alt="Logo Weston" class="img-logo"><span class="mein">Weston</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-reset " href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white " href="#experience">Experience <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white " href="#galery">Galery <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white " href="#coments">Inspiration<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white " href="#hotels">Hotels<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-muted" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Links
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="">References</a>
+                <a class="dropdown-item" href="">Playa El Cuco</a>
+                <a class="dropdown-item" href="">Playa Costa de Sol</a>
+                <a class="dropdown-item" href="">Playa San Blas</a>
+                <a class="dropdown-item" href="">Playa El Espino</a>
+                <a class="dropdown-item" href="">Playa El Tunco</a>
+                <a class="dropdown-item" href="">Playa de Las Flores</a>
+                <a class="dropdown-item" href="">Playa Garita Plamera</a>
+                <a class="dropdown-item" href="">Playa San Diego</a>
+                <a class="dropdown-item" href="">Playa El Zunzal</a>
+                <a class="dropdown-item" href="">Puerto de La Libertad</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="">Share-Us</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Type your beach..." aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    </nav>
+    <!-- Header Starts -->
+  <header class="header linear-white" id="header" id="sec-1">
+    <div class="container vh-50">
+      <br>
+      <br>
+      <!-- Descripcion -->
+      <div class="row h-100 align-items-center">
+        <div class="col-6 text-white">
+          <!-- Title -->
+          <h1>
+            <span><span class="head-color">Turismo</span> en <span class="head-color">El Salvdor</span></span> <br> <h3 class="init">Bienvenidos</h3>
+          </h1>
+          <!-- Parrafo -->
+          <p class="text-color">
+            El Salvador tiene algunas de las mejores playas para practicar surf en el mundo.
+          </p>
+          <!-- Button -->
+          <a href="#experience" class="btn btn-outline-secondary">Leer Más...</a>
+          </div>
+        </div>
+      </div>
+    <img src="./img/cuts/cut-header.svg" alt="">
+  </header>
+  <br>
+  <!-- Experience -->
+  <section class="container" id="experience" id="sec-2">
+    <div class="row">
+      <!-- Text -->
+      <div class="col-12 text-center text-color">
+        <h1>Playas y Esteros</h1>
+        <h4>Lo más visitado por los Salvadoreños</h4>
+        <p class="text-muted ">
+          A continuacion de deja una pequeña descripción de las playas mas reconocidas a nivel Nacional como internacional junto con su dirección URL para la ubicacion 
+          y localización de el sitio turistico.
+        </p>
+      </div>
+      <!-- Card -->
+      <!-- Card#1 -->
+      <article class="col-4">
+        <div class="card">
+          <img src="./img/8c9aa6c17e568f3803d1a2c2cc452d10.jpg" alt="" class="card-img card-img-filter">
+          <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+            <h4>Playa EL Cuco</h4>
+            <p>Uno de los mejores destinos turísticos lo encontrarás en el departamento de San Miguel;  exactamente a 170 kilómetros de San Salvador. 
+               Sector donde encontrarás el mayor de los disfrutes y descanso en toda su extensión.
+            </p>
+            <a href="https://www.google.com/maps/place/Playa+El+Cuco/@13.16822,-88.1175096,14z/data=!4m8!1m2!2m1!1splayas+el+cuco+el+salvador!3m4!1s0x0:0x84b338e167e1964f!8m2!3d13.1724806!4d-88.1044239?hl=es-419" class="text-reset">Como llegar...</a>
+          </div>
+        </div>
+      </article>
+      <!-- Card#2 -->
+      <article class="col-4">
+        <div class="card">
+          <img src="./img/227e86e3e77c0eac9ef882507e271667.jpg" alt="" class="card-img card-img-filter">
+          <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+            <h4>Playa el Espino</h4>
+            <p>
+              Es considerada por su hermosa planicie, blanca arena y variadas mareas, de las mejores playas de El Salvador. 
+              Para los amantes del Surf es un lugar que tiene que estar en tu lista de sitios a conocer.
+            </p>
+            <a href="https://www.google.com/maps/place/Playa+El+Espino/@13.1698526,-88.3076309,14z/data=!4m13!1m7!3m6!1s0x8f7b22821898d5a5:0xbb20a185ace7d747!2sPlaya+El+Espino!3b1!8m2!3d13.1705619!4d-88.2941597!3m4!1s0x8f7b22821898d5a5:0xbb20a185ace7d747!8m2!3d13.1705619!4d-88.2941597?hl=es-419" class="text-reset">Como Llegar...</a>
+          </div>
+        </div>
+      </article>
+      <!-- Card#3 -->
+      <article class="col-4 ">
+        <div class="card">
+          <img src="./img/tunco-lodge-hotel-restaurant.jpg" alt="Rating" class="card-img card-img-filter">
+          <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+            <h4>Playa el Tunco</h4>
+            <p>
+              Excelente área de restaurantes hoteles y bares sin lugar a duda es un punto obligado en la visita Mucha seguridad y todo súper tranquilo, 
+              la playa muy buena para surfistas Excelente atardecer y muy buenos festivales
+            </p>
+            <a href="https://www.google.com/maps/place/Playa+El+Tunco/@13.4923602,-89.4041763,14z/data=!4m8!1m2!2m1!1splaya+el+tunco+el+salvador!3m4!1s0x0:0x283d3c8909f02f8!8m2!3d13.4925918!4d-89.3813699?hl=es-419" class="text-reset">Como llegar...</a>
+          </div>
+        </div>
+      </article>
+
+      
+      <!-- Card#4 -->
+      <article class="col-4">
+        <div class="card">
+          <img src="./img/costa-del-sol-el-salvador.jpg" alt="Rating" class="card-img card-img-filter">
+          <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+            <h4>Playa Costa del Sol</h4>
+            <p>
+              La playa la Costa del Sol está ubicada en el departamento de La paz, en el municipio San Luis de la Herradura, específicamente
+              en Cantón San Antonio de Los Blancos. Es uno de los lugares más visitados por personas que aman el sol y las olas
+            </p>
+            <a href="https://www.google.com/maps/place/Playa+Costa+del+Sol/@13.3436102,-89.0238985,14z/data=!4m13!1m7!3m6!1s0x8f7cba1049086983:0xda43ef28ca8faef3!2sPlaya+Costa+del+Sol!3b1!8m2!3d13.3436111!4d-89.0063889!3m4!1s0x8f7cba1049086983:0xda43ef28ca8faef3!8m2!3d13.3436111!4d-89.0063889?hl=es-419" class="text-reset">Como llegar</a>
+          </div>
+        </div>
+      </article>
+      <!-- Card#5 -->
+      <article class="col-4" class="Pad-top">
+        <div class="card">
+          <img src="./img/unnamed.jpg" alt="Rating" class="card-img card-img-filter">
+          <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+            <h4>Estero de Jaltepeque</h4>
+            <p>
+              se encuentra ubicado en La Paz, El Salvador, en la costa del Sol, y posee una extensión de 28 kilómetros que 
+              sirve de hábitat a una gran cantidad de aves costeras y variedad de moluscos
+            </p>
+            <a href="https://www.google.com/maps/place/Estero+Jaltepeque/@13.301952,-88.8828707,17z/data=!4m12!1m6!3m5!1s0x8f7ca436e44c865f:0xa1b98da036185978!2sEstero+Jaltepeque!8m2!3d13.301952!4d-88.880682!3m4!1s0x8f7ca436e44c865f:0xa1b98da036185978!8m2!3d13.301952!4d-88.880682?hl=es-419" class="text-reset">Como llegar...</a>
+          </div>
+        </div>
+      </article>
+      <!-- Card#6 -->
+      <article class="col-4">
+        <div class="card">
+          <img src="./img/unnamed (1).jpg" alt="Rating" class="card-img card-img-filter">
+          <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+            <h4>Estero El Zapote</h4>
+            <p>
+              Lugar reconocido por una planicie de arena que llega a medir de 30 a 50 metros desde los servicios hoteleros hasta las leves
+              olsa que tocan la arena de este magnifico lugar.
+            </p>
+            <a href="https://www.google.com/maps/place/El+Zapote/@13.7105706,-90.0399808,15z/data=!4m8!1m2!2m1!1sestero+el+zapote+el+salvador!3m4!1s0x858802dc6c47d9d9:0xdc70c88ea0b966cd!8m2!3d13.7129867!4d-90.0314865?hl=es-419" class="text-reset">Como llegar...</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section> 
+  <br>
+  <br>
+  <hr style="width: 82%; height: 1px;" color="#ccc">
+  <br>
+  <br>
+  <!-- GALERY  -->
+  <section class="galeria" id="galery" id="sec-3">
+    <div class="container">
+      <!-- Text -->
+      <div class="col-12 text-center">
+        <h2 class="text-uppercase h4">Galeria de Imagenes</h2>
+        <p class="text-muted">
+          Acontinuación se muestran unas tomas fotográficas de las playas salvadoreñas, las cuales son citadas en el Menú desplegable
+          <i>"Links"</i>  en le cual se podra direccionar y acceder a una busqueda mas detenida
+        </p>
+      <div class="row">
+        <div class="column">
+          <img src="./img/playa2/161192128.jpg" />
+          <img src="./img/playa2/64_original_file_I0.jpg" />
+          <img src="./img/playa2/ba13a960d50c8bf4013b0203c0737001.jpg" />
+          <img src="./img/playa2/El-Salvador-Surff.jpg" />
+        </div>
+        <div class="column">
+          <img src="./img/playa2/Playas.jpg">
+          <img src="./img/playa2/1422530_565585740179294_1447604330_n.jpg">
+          <img src="./img/playa2/filename-image-98-jpg.jpg">
+          <img src="./img/playa2/playa-san-blas-1024x470.jpg">
+          <img src="./img/playa2/045a9fc2f1edf869f5564410b1abf452.jpg">
+        </div>
+        <div class="column">
+          <img src="./img/playa2/D1BE2INWsAAsFiq.jpg">
+          <img src="./img/playa2/mejores-playas-salvador.jpg">
+          <img src="./img/playa2/playa-el-espino-el-salvador.jpg" />
+          <img src="./img/playa2/unnamed (2).jpg">
+          <img src="./img/playa2/las-flores3.jpg">
+          <img src="./img/playa2/Playas-salvadoreñas.png">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comments -->
+  <section class="comments mb-5 linear-white">
+    <img src="./img/cuts/cut-header.svg" alt="" class="trasnform-turn">
+    <div class="container">
+      <div class="row">
+        <blockquote class="col-12 text-white text-center">
+          <!-- img -->
+          <img src="./img/john-doe.jpeg" alt="John Doe" class="Commets__img">
+          <!-- Comment -->
+          <P class="txt-color">
+            La historia del surf es difícil de rastrear en lo relativo a sus orígenes, puesto que no hay documentos 
+            escritos nativos que la atestigüen. A pesar de ello se conservan diversos testimonios de antiguos viajeros europeos
+            que observaron el arte de deslizarse sobre la superficie del agua
+          </P>
+          <!-- Name -->
+          <div class="blockquote-footer text-white">
+            <cite class="text-color">Nelson Almendares</cite>
+          </div>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Inspiration -->
+  <section class="container" id="coments" id="sec-4">
+    <div class="row">
+      <!-- Title -->
+      <div class="col-12 text-center">
+        <h3 class="h4">Comentarios</h3>
+        <h2 class="text-capitalize mb-5" class="text-color">Sparks of Inspiration</h2>
+      </div>
+      <!-- MeidaObjet#1 -->
+      <ul class="col-6">
+        <li class="media">
+          <img src="./img/unnamed (3).jpg" alt="" class="media-object-img">
+          <div class="media-body">
+            <h5 class="h6 mb-0 mb-1 text-secondary">AndersonDominguez3456@gmail.com</h5>
+            <h4 class="h5">
+              <a href="#" class="text-reset">El Tunco Beach</a>
+            </h4>
+            <p>Se vive una experiencia muy linda en los restaurantes que te ofrecen una gastonomía marina muy deliciosa</p>
+          </div>
+        </li>
+        <li class="media">
+          <img src="./img/image-placeholder-female-1.png" alt="" class="media-object-img">
+          <div class="media-body">
+            <h5 class="h6 mb-0 mb-1 text-secondary">MonicaEstaphayCruz4582@Outlook.com</h5>
+            <h4 class="h5">
+              <a href="#" class="text-reset">Costa del Sol Beach</a>
+            </h4>
+            <p>Es una de las mejores playas que he visitado en las aventuras con mis niños y mi esposo, hemos viajado a varios centros turisticas de
+              Centroamérica y no deja de ser una de las mojeres que visitamos, las gastronomía y las personas, es súper genial...
+            </p>
+          </div>
+        </li>
+        <li class="media">
+          <img src="./img/unnamed (2).jpg" alt="" class="media-object-img">
+          <div class="media-body">
+            <h5 class="h6 mb-0 mb-1 text-secondary">EstevenMenjivar1234@gmmail.com</h5>
+            <h4 class="h5">
+              <a href="#" class="text-reset">El Espino Beach</a>
+            </h4>
+            <p>Una de las cosas mas lindas de esta Playa es la arena fina que se mete en las Zandalias y el color del agua de mar no es tan azul oscuro como el de los puertos
+              , es más bien en un tono celeste que le da un toque de <i>"Kliche"</i> a los visitantes que aquí vienen...
+            </p>
+          </div>
+        </li>
+      </ul>
+
+      <!-- MediaObject#2 -->
+      <ul class="col-6">
+        <li class="media">
+          <img src="./img/images.jpg" alt="" class="media-object-img">
+          <div class="media-body">
+            <h5 class="h6 mb-0 mb-1 text-secondary">YudithMartinez2121@Outollok.com</h5>
+            <h4 class="h5">
+              <a href="#" class="text-reset">La Libertad Port Beach</a>
+            </h4>
+            <p>Sin duda alguna que la visita al puerto de la Libertad, el más conocido a nivel Nacional, es una de las mejores distracciones que pudeo tener a fin de 
+              año, suelo ir con unas amigas de la universidad a pasar unas 2 noches, en las que nos despejamos del aire de la ciudad y estamos en un ambiente de calor y diverción 
+              entre chicas.</p>
+          </div>
+        </li>
+        <li class="media">
+          <img src="./img/selfie-headshot-e1485719447129.jpeg" alt="" class="media-object-img">
+          <div class="media-body">
+            <h5 class="h6 mb-0 mb-1 text-secondary">MichellePineda3r54e@gmail.com</h5>
+            <h4 class="h5">
+              <a href="#" class="text-reset">El Zapote Beach</a>
+            </h4>
+            <p>Es la primera ves que decidí visitar un lugar como este, es un poco solo en cantidad de personas que lo visitan, por que esta bastante retirado de las rutas 
+              turisticas de zonas costeras, pero quede maravillada con este tipo de acentamiento acuatico, es una zona muy larga desde las glorietas de hasta el inicio de la playa,
+              o más bien por su nombre real Estero del Zapote.
+            </p>
+          </div>
+        </li>
+        <li class="media">
+          <img src="./img/blank-profile-picture-973460_640.png" alt="" class="media-object-img">
+          <div class="media-body">
+            <h5 class="h6 mb-0 mb-1 text-secondary">VictorManuelleOrtiz2020@Gmail.com</h5>
+            <h4 class="h5">
+              <a href="#" class="text-reset">Jaltepeque Estero</a>
+            </h4>
+            <p>Muy buen servivio, buena variedad gastrónomica, un lugar que recomendaría a todo público.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="row pad-ft" id="contact" id="sec-5">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img style="width: 100%; height: 400px;" src="./img/carousel/carousel1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img style="width: 100%; height: 400px;" src="./img/carousel/carousel2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img style="width: 100%; height: 400px;" src="./img/carousel/carousel4.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img style="width: 100%; height: 400px;" src="./img/playa2/6-playas-cerca-de-San-Salvador-que-te-cautivarán.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="container mj-top" id="hotels">
+    <div class="row">
+        <div class="col">
+          <div class="jumbotron-fluid mt-5 text-center">
+              <h1 class="display-5">Zonas Hoteleras</h1>
+              <hr class="my-4">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <div class="card-deck">
+                <div class="card">
+                    <img style="width: 500px; transform: translate( 4% , 5% );" src="img/b-boutique-hotel.jpg"  class="card-img-top" alt="...">
+
+                  <div class="card-body">
+                          <h5 class="card-title">B Boutique Hotel</h5>
+                          <p class="card-text"><img style="width: 35px;" src="img/map.png" alt="">  Km 45.9 Carretera Litoral, Tamanique, La Libertad, El Salvador, La Libertad 01101, El Salvador
+                            +503 7210 9258</p>
+                          <p>
+                            <li class="list-inline-item"><ion-icon name="star"></ion-icon></li>
+                            <li class="list-inline-item"><ion-icon name="star"></ion-icon></li>
+                            <li class="list-inline-item"><ion-icon name="star"></ion-icon></li>
+                            <li class="list-inline-item"><ion-icon name="star"></ion-icon></li>
+                            <li class="list-inline-item"><ion-icon name="star"></ion-icon></li> <br><br>
+                            <button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapseExample">
+                                Leer más sobre este artículo...
+                              </button>
+                          </p>
+                          <div class="collapse" id="collapse1">
+                                  <div class="card card-body letter">
+                                    Bienvenido a B Boutique Hotel, tu segundo hogar en El Sunzal. B Boutique Hotel tiene como objetivo conseguir que tu visita sea lo más relajante y 
+                                    agradable posible, razón por la que tantos huéspedes siguen volviendo año tras año. <hr> <br> Las habitaciones de los huéspedes incluyen minibar, aire acondicionado 
+                                    y mesa de escritorio, y B Boutique Hotel te ayuda a que estés conectado, ya que dispone de wifi gratuito.
+                                    <br><br>
+                                    <b>Información relevante</b> <br>
+                                    ESTILO DEL HOTEL <br>
+                                    -Joya oculta <br>
+                                    IDIOMAS QUE SE HABLAN <br>
+                                    -Español, Inglés <br><br>
+                                    <a style="text-decoration: none;" class="ref" href="">
+                                      <img style="width: 30px;" src="img/helm.png" alt=""> Llevarme al sitio...
+                                    </a>
+                                  </div>
+                          </div>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-muted">Last updated 1 month ago</small>
+                  </div>
+                </div>
+                <div class="card">
+                    <img style="width: 470px; transform: translate( 7% , 5% );" src="img/166671814.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                            <h5 class="card-title">Boca Olas Resort & Villas</h5>
+                            <p class="card-text"><img style="width: 35px;" src="img/map.png" alt=""> Hotel sencillo de estilo colonial con restaurante frente al río y piscina exterior con bar. <br>
+                              El Tunco • 2389 6333
+                            </p>
+                            <li class="list-inline-item"><ion-icon name="star"></ion-icon></li>
+                            <li class="list-inline-item"><ion-icon name="star"></ion-icon></li>
+                            <li class="list-inline-item"><ion-icon name="star"></ion-icon></li>
+                            <li class="list-inline-item"><ion-icon name="star"></ion-icon></li> <br><br>
+                            <p>
+                                <button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapseExample">
+                                  Leer más sobre este artículo...
+                                </button>
+                            </p>
+                            <div class="collapse" id="collapse2">
+                                    <div class="card card-body letter">
+                                      El establecimiento Boca Olas Resort Villas se encuentra en La Libertad, a 150 metros de la playa El Majahual, y ofrece restaurante, aparcamiento privado gratuito, piscina al aire libre y bar. Además, hay WiFi gratuita en todas las instalaciones, servicio de consejería, servicio de habitaciones, jardín y solárium. <br><br>
+                                      Se sirve un desayuno americano.
+
+                                      El Boca Olas Resort Villas dispone de ping pong y servicio de alquiler de coches. <br><br>
+
+                                      La playa El Tunco se encuentra a 150 metros, y la playa El Sunzal está a 550 metros. El aeropuerto más cercano es el aeropuerto internacional Monseñor Oscar Arnulfo Romero, situado a 39 km del Boca Olas Resort Villas, y los huéspedes disponen de servicio de enlace con el aeropuerto, por un suplemento. <br><br>
+                                      <a style="text-decoration: none;" class="ref" href="">
+                                        <img style="width: 30px;" src="img/helm.png" alt=""> Llevarme al sitio...
+                                      </a>
+                                    </div>
+                            </div>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Last updated 15 days ago</small>
+                    </div>
+                </div>
+              </div>
+              <div class="card-deck">
+                <div class="card">
+                    <img style="width: 500px; transform: translate( 4% , 5% );" src="img/palo-verde-04.jpg" class="card-img-top" alt="...">
+
+                    <div class="card-body">
+                            <h5 class="card-title">Hotel Palo Verde, La Libertad</h5>
+                            <p class="card-text">
+                              <img style="width: 35px;" src="img/map.png" alt=""> Km 53.5 Carretera CA2 No12 Playa El Zonte, Chiltiupán , La Libertad, 01101 El Zonte, El Salvador</p>
+                            <p>
+                            <li class="list-inline-item"><ion-icon name="star"></ion-icon></li>
+                            <li class="list-inline-item"><ion-icon name="star"></ion-icon></li>
+                            <li class="list-inline-item"><ion-icon name="star"></ion-icon></li>
+                            <li class="list-inline-item"><ion-icon name="star"></ion-icon></li>
+                            <li class="list-inline-item"><ion-icon name="star"></ion-icon></li> <br><br>
+                                <button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapseExample">
+                                  Leer más sobre este artículo...
+                                </button>
+                            </p>
+                            <div class="collapse" id="collapse3">
+                                    <div class="card card-body letter">
+                                      El Palo Verde se encuentra en El Zonte y ofrece restaurante, piscina al aire libre, bar y jardín. Ofrece habitaciones familiares y terraza. El alojamiento cuenta con recepción 24 horas, servicio de enlace con el 
+                                      aeropuerto, servicio de habitaciones y WiFi gratuita en todas las instalaciones. <br><br>
+
+                                      Todas las habitaciones disponen de aire acondicionado y TV de pantalla plana. <br><br> 
+
+                                      El Palo Verde sirve un desayuno continental o a la carta. <br><br>
+
+                                      La Libertad está a 19 km. El aeropuerto más cercano es el aeropuerto internacional Monseñor Oscar Arnulfo Romero, situado a 50 km del Palo Verde <br><br>
+                                      <a style="text-decoration: none;" class="ref" href="">
+                                        <img style="width: 30px;" src="img/helm.png" alt=""> Llevarme al sitio...
+                                      </a>
+                                    </div>
+                            </div>
+                    </div>
+
+                    <div class="card-footer">
+                      <small class="text-muted">Last updated 8 weeks ago</small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img style="width: 480px; transform: translate( 6% , 5% );" src="img/248913184.jpg" class="card-img-top" alt="...">
+
+                    <div class="card-body">
+                            <h5 class="card-title">Hotel Los Farallones, La libertad</h5>
+                            <p class="card-text"><img style="width: 35px;" src="img/map.png" alt="">  Km 41.5 Carretera Litoral, 00106 La Libertad, El Salvador</p>
+                            <p>
+                              <li class="list-inline-item"><ion-icon name="star"></ion-icon></li>
+                            <li class="list-inline-item"><ion-icon name="star"></ion-icon></li>
+                            <li class="list-inline-item"><ion-icon name="star"></ion-icon></li>
+                            <li class="list-inline-item"><ion-icon name="star"></ion-icon></li>
+                            <li class="list-inline-item"><ion-icon name="star"></ion-icon></li> <br><br>
+                                <button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapseExample">
+                                  Leer más sobre este artículo...
+                                </button>
+                            </p>
+                            <div class="collapse" id="collapse4">
+                                    <div class="card card-body letter">
+                                      El Hotel Los Farallones está situado frente a la playa, en una playa privada de La Libertad, y ofrece jardines tropicales, piscina infinita privada y solárium con hamacas y vistas al mar. <br><br>
+
+                                      Las habitaciones tienen aire acondicionado y Smart tvs. Todas disponen de reproductor de DVD, caja fuerte y baño privado con artículos de aseo. <br><br>
+
+                                      Los Farallones alberga un bar restaurante. A 15 minutos a pie hay una gran variedad de restaurantes. <br><br>
+
+                                      La popular zona de surf de El Sunzal está a solo 5 minutos en coche del hotel. El aeropuerto internacional de El Salvador se encuentra a 30 minutos en coche, mientras que San Salvador está a 40 minutos. <br><br>
+                                      <a style="text-decoration: none;" class="ref" href="">
+                                        <img style="width: 30px;" src="img/helm.png" alt=""> Llevarme al sitio...
+                                      </a>
+                                    </div>
+                            </div>
+                    </div>
+
+                    <div class="card-footer">
+                      <small class="text-muted">Last updated 3 months ago</small>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </div>
+  </div>
+
+
+  <section id="Contact" class="divider top-st" id="sec-6">
+    <div class="container topmargin-lg ">
+        <div class="row" >
+            <div class="col-md-6 mt-4" class="pad-ft">
+                <h3>Tienes dudas ó comentarios, haznoslo saber...</b></h3>
+                <p class="text-color">Nos encargamos de responder lo mas anticipados que sea posible, con un limite de respuesta de una hora en días festivos, y de 10 a 20 minutos
+                  en días comunes, siendo así de los mas rádipos en la atención al cliente y brindando seguridad y confiabilidad a los usuarios de Weston...
+                </p>
+            </div>
+            <div class="col-md-6 mt-4 top-bt">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" class="Model" id="" placeholder="Name">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="" placeholder="Last name">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="" placeholder="Adress">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="" placeholder="Phone number (optional)">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <button class="btn btn-dark full-width" onclick="bs4pop.alert('Su petición esta siendo procesada, se le enviara un correo de confirmación, por favor revisar dicha plataforma', function(){ console.log('You Clicked Okay');})">Enviar </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  
+  <footer class="divider">
+    <div class="container topmargin-lg">
+        <img src="./img/logo-white.svg" class="logo-brand" alt="logo">
+        <ul class="list-inline">
+            <li class="list-inline-item footer-menu"><a href="#">Home</a></li>
+            <li class="list-inline-item footer-menu"><a href="#experience">Experience</a></li>
+            <li class="list-inline-item footer-menu"><a href="#galery">Galery</a></li>
+            <li class="list-inline-item footer-menu"><a href="#contact">Contact</a></li>
+            <li class="list-inline-item footer-menu"><a href="#hotels">Contact</a></li>
+        </ul>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="https://www.instagram.com/"><img src="img/instagram.svg" class="img-fluid"></a></li>
+            <li class="list-inline-item"><a href="https://twitter.com/login"><img src="img/twitter.svg" class="img-fluid"></a></li>
+            <li class="list-inline-item"><a href="https://www.youtube.com/"><img src="img/youtube.svg" class="img-fluid"></a></li>
+            <li class="list-inline-item"><a href="https://dribbble.com/"><img src="img/dribbble.svg" class="img-fluid"></a></li>
+            <li class="list-inline-item"><a href="https://es-la.facebook.com/"><img src="img/facebook.svg" class="img-fluid"></a></li>
+        </ul>
+        <small>©2020 All Rights Reserved. Created by Nelson Almendares</small>
+    </div>
+  </footer>
+
+    <!-- Activando Toast -->
+    	<script>
+
+		function demo_dialog(){
+
+			let dia = bs4pop.dialog({
+
+				title: 'Dialog Title',
+				content: 'Any Dialog Content Here',
+
+				closeBtn: true,
+				backdrop: 'static',
+				btns: [
+					{label: 'Okay',	className: 'btn-primary', onClick(cb){}},
+					{label: 'Cancel',	className: 'btn-secondary', onClick(cb){}}
+				],
+				onShowStart: function(){
+					// console.log('onShowStart');
+				},
+				onShowEnd: function(){
+					// console.log('onShowEnd');
+				},
+				onHideStart: function(){
+					// console.log('onHideStart');
+				},
+				onHideEnd: function(){
+					// console.log('onHideEnd');
+				},
+				onDragStart: function(){
+					console.log('onDragStart');
+				},
+				onDragEnd: function(){
+					// console.log('onDragEnd');
+				},
+				onDrag: function(){
+					console.log('onDrag');
+				}
+
+			});
+
+			setTimeout(() => {
+				// dia.hide()
+			}, 2000);
+
+		}
+
+		function demo_alert(){
+
+		}
+
+		setTimeout(() => {
+			$('#alert').alert();
+
+			setTimeout(() => {
+				$('#alert').alert('close');
+			}, 2000);
+		}, 2000);
+
+  </script>
+
+  <script>$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+  </script>   
+
+  <script>
+  $(document).ready(function(){
+    $('.toast').toast('show');
+  });
+  </script>
+
+    <!-- Jquery -->
+    <script src="./js/jquery-3.5.0.min.js"></script>
+    <!-- Popper -->
+    <script src="./js/popper.min.js"></script>
+    <!-- JS Bootstrap -->
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>
